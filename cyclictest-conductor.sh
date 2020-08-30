@@ -33,8 +33,8 @@ while :
 do
 	opt="${1}"
 	case "${opt}" in
-		"-nostress" 	) NOSTRESS="${opt}";;
-		"-minutes"  	) prev_opt="${opt}";;
+		"-nostress"|"--nostress" 	) NOSTRESS="${opt}";;
+		"-minutes"|"--minutes"  	) prev_opt="${opt}";;
 		[0-9]*		) case "${prev_opt}" in
 					"-minutes"	) MINUTES="${opt}";;
 				  esac
